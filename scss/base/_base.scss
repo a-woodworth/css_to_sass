@@ -42,3 +42,8 @@ img {
   max-width: 100%;
   width: 100%; // Add width to fix Firefox/Safari image scaling issue
 }
+
+hr {
+  margin: 0 2rem;
+  background-color: $extra-light-gray;
+}

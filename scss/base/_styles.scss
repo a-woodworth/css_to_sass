@@ -93,11 +93,11 @@ a:hover,
 
 // ----- Layout Containers -----
 
-.main_header {
-  padding: .5em 0 45px;
-  margin: 0 auto;
-  background-color: $extra-light-gray;
-}
+// .main_header {
+//   padding: .5em 0 45px;
+//   margin: 0 auto;
+//   background-color: $extra-light-gray;
+// }
 
 .bio {
   padding: 0 1em;
@@ -116,12 +116,12 @@ a:hover,
   padding: 2rem;
 }
 
-.main_footer {
-  min-height: 125px;
-  background-color: $extra-light-gray;
-  margin: 0;
-  padding-top: 2rem;
-}
+// .main_footer {
+//   min-height: 125px;
+//   background-color: $extra-light-gray;
+//   margin: 0;
+//   padding-top: 2rem;
+// }
 
 
 // ___________________________________________________________________
@@ -209,36 +209,36 @@ a:hover,
 }
 
 // ----- Footer -----
-hr {
-  margin: 0 2rem;
-  background-color: $extra-light-gray;
-}
+// hr {
+//   margin: 0 2rem;
+//   background-color: $extra-light-gray;
+// }
 
-.main_footer a,
-.main_footer p {
-  padding: 1rem 2rem 1rem;
-  font-size: .75em;
-  font-weight: 800;
-  color: $dark-gray;
-  display: block;
-}
+// .main_footer a,
+// .main_footer p {
+//   padding: 1rem 2rem 1rem;
+//   font-size: .75em;
+//   font-weight: 800;
+//   color: $dark-gray;
+//   display: block;
+// }
 
-.main_footer a:hover {
-  color: $fountain-blue;
-}
+// .main_footer a:hover {
+//   color: $fountain-blue;
+// }
 
-.main_footer p {
-  float: left;
-}
+// .main_footer p {
+//   float: left;
+// }
 
-.footer_nav {
-  float: right;
-}
+// .footer_nav {
+//   float: right;
+// }
 
-.footer_links,
-#mobile_footer {
-  text-transform: uppercase;
-}
+// .footer_links,
+// #mobile_footer {
+//   text-transform: uppercase;
+// }
 
 
 // ----- Float Clearfix -----
