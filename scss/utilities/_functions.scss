@@ -1,4 +1,8 @@
 // ___________________________________________________________________
-// Modules
+// Functions
 // ___________________________________________________________________
 
+// Import Google Font URL
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}

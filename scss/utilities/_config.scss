@@ -2,12 +2,43 @@
 // Global Config
 // ___________________________________________________________________
 
-// Font Stack
+// Google Font Stack
+$font-url--google: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800';
+
+//Font Stack
+$font-family--primary: 'Open Sans', sans-serif;
 
 // Font Weights
+$font-weight--extra-bold: 800;
+$font-weight--bold: 700;
+$font-weight--semi-bold: 600;
+$font-weight--regular: 400;
+$font-weight--light: 300;
 
 // Descriptive Base Colors
+$dark-gray: #515151;
+$medium-gray: rgb(126, 126, 126);
+$gray: #939393;
+$light-gray: #EDEDED;
+$extra-light-gray: #FAFAFA;
+
+$black: rgba(0, 0, 0, 0.75);
+$fountain-blue: #51BAB5;
+$white: #fff;
 
 // Color Usage
+$color-bg-primary: $extra-light-gray;
+$color-bg-secondary: $white;
+$color-accent: $fountain-blue;
+
+// Text
+$base__font-size: 1em;
+$base__line: 1.6;
 
 // Breakpoints
+$brkpoint-sm: 320px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1024px;
+
+
+

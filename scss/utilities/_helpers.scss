@@ -1,0 +1,17 @@
+// ___________________________________________________________________
+// Helpers
+// ___________________________________________________________________
+
+// Clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Center Alignment
+%centered {
+  text-align: center;
+}

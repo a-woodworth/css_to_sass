@@ -2,51 +2,51 @@
 // Global Layout Set-up
 // ___________________________________________________________________
 
-* {
-  box-sizing: border-box;
-}
+// * {
+//   box-sizing: border-box;
+// }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-}
+// body {
+//   font-family: 'Open Sans', sans-serif;
+//   line-height: 1.6;
+// }
 
-h1, h2 {
-  font-size: 1em;
-  text-align: center;
-  color: #515151;
-}
+// h1, h2 {
+//   font-size: $base__font-size;
+//   text-align: center;
+//   color: $dark-gray;
+// }
 
-h1 {
-  font-weight: 800;
-}
+// h1 {
+//   font-weight: $font-weight--extra-bold;
+// }
 
-h2 {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0;
-}
+// h2 {
+//   text-transform: uppercase;
+//   font-weight: $font-weight--bold;
+//   margin: 0;
+// }
 
-h3 {
-  font-weight: 600;
-  color: rgba(0,0,0, .75);
-  margin: 0;
-  padding: 20px 0 10px;
-}
+// h3 {
+//   font-weight: $font-weight--semi-bold;
+//   color: $black;
+//   margin: 0;
+//   padding: 20px 0 10px;
+// }
 
-p {
-  font-weight: 400;
-  margin: 0;
-}
+// p {
+//   font-weight: $font-weight--regular;
+//   margin: 0;
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
-img {
-  max-width: 100%;
-  width: 100%; // Add width to fix Firefox/Safari image scaling issue
-}
+// img {
+//   max-width: 100%;
+//   width: 100%; // Add width to fix Firefox/Safari image scaling issue
+// }
 
 
 // ___________________________________________________________________
@@ -66,7 +66,7 @@ img {
 .name,
 .main_nav li {
   text-align: center;
-  color: #515151;
+  color: $dark-gray;
   margin: 6px 0;
 }
 
@@ -79,15 +79,15 @@ img {
 
 .main_nav a {
   font-size: .95em;
-  font-weight: 700;
+  font-weight: $font-weight--bold;
   text-transform: uppercase;
-  color: #515151;
+  color: $dark-gray;
 }
 
 a:hover,
 .phone a:hover,
 .email a:hover {
-  color: #51BAB5;
+  color: $fountain-blue;
 }
 
 
@@ -96,16 +96,16 @@ a:hover,
 .main_header {
   padding: .5em 0 45px;
   margin: 0 auto;
-  background-color: #FAFAFA;
+  background-color: $extra-light-gray;
 }
 
 .bio {
   padding: 0 1em;
-  background-color: #FAFAFA;
+  background-color: $extra-light-gray;
 }
 
 .portfolio {
-  background-color: #fff;
+  background-color: $white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -118,7 +118,7 @@ a:hover,
 
 .main_footer {
   min-height: 125px;
-  background-color: #FAFAFA;
+  background-color: $extra-light-gray;
   margin: 0;
   padding-top: 2rem;
 }
@@ -142,13 +142,13 @@ a:hover,
 .bio_photo {            // Photo Background
   max-width: 300px;
   height: 185px;
-  background-color: #EDEDED;
+  background-color: $light-gray;
   margin: 0 auto;
 }
 
 .intro {
   font-size: .95em;
-  color: rgb(126, 126, 126);
+  color: $medium-gray;
   text-align: center;
   margin: 0 0 3rem;
   padding-top: 2rem;
@@ -170,7 +170,7 @@ a:hover,
 }
 
 .card p {
-  font-weight: 300;
+  font-weight: $font-weight--light;
   padding: 0 1rem 45px;
   font-size: .95em;
 }
@@ -183,7 +183,7 @@ a:hover,
 // ----- Contact Section -----
 
 .contact {
-  background-color: #FAFAFA;
+  background-color: $extra-light-gray;
   margin-top: 30px;
 }
 
@@ -195,7 +195,7 @@ a:hover,
 .phone,
 .email,
 .contact a {
-  color: #939393;
+  color: $gray;
   font-size: .85em;
 }
 
@@ -211,7 +211,7 @@ a:hover,
 // ----- Footer -----
 hr {
   margin: 0 2rem;
-  background-color: #FAFAFA;
+  background-color: $extra-light-gray;
 }
 
 .main_footer a,
@@ -219,12 +219,12 @@ hr {
   padding: 1rem 2rem 1rem;
   font-size: .75em;
   font-weight: 800;
-  color: #515151;
+  color: $dark-gray;
   display: block;
 }
 
 .main_footer a:hover {
-  color: #51BAB5;
+  color: $fountain-blue;
 }
 
 .main_footer p {
@@ -256,7 +256,7 @@ hr {
 
 // ----- Mobile -----
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: $brkpoint-sm) {
 
   .container {
     width: 90%;
@@ -264,7 +264,7 @@ hr {
   }
 
   .main_nav a {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .card {
@@ -283,7 +283,7 @@ hr {
 
 // ----- Tablet -----
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $brkpoint-md) {
 
   .container {
     width: 100%;
@@ -295,7 +295,7 @@ hr {
   }
 
   .main_nav a {
-    background-color: #FAFAFA;
+    background-color: $extra-light-gray;
   }
 
   .main_nav li {
@@ -367,10 +367,10 @@ hr {
 
 // ----- Laptop/Desktop -----
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $brkpoint-lg) {
 
   body {
-    background-color: #FAFAFA;
+    background-color: $extra-light-gray;
   }
 
   .container {
