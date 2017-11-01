@@ -3,6 +3,7 @@
 // ___________________________________________________________________
 
 .main_header {
+  @extend %clearfix;
   padding: .5em 0 45px;
   margin: 0 auto;
   background-color: $extra-light-gray;

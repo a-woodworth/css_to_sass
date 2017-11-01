@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800");
-h1, h2 {
+.main_header:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+h1, h2, .main_nav li {
   text-align: center; }
 
 html {
@@ -230,30 +235,6 @@ hr {
   margin: 0 2rem;
   background-color: #FAFAFA; }
 
-.name {
-  font-size: 1.5em; }
-
-.main_nav {
-  margin-top: 5px; }
-
-.name,
-.main_nav li {
-  text-align: center;
-  color: #515151;
-  margin: 6px 0; }
-
-.name,
-.main_nav a {
-  padding: 10px;
-  text-align: center;
-  display: block; }
-
-.main_nav a {
-  font-size: .95em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #515151; }
-
 a:hover,
 .phone a:hover,
 .email a:hover {
@@ -262,12 +243,6 @@ a:hover,
 .bio {
   padding: 0 1em;
   background-color: #FAFAFA; }
-
-.portfolio {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
 
 .contact {
   text-align: center;
@@ -294,30 +269,9 @@ a:hover,
   margin: 0 0 3rem;
   padding-top: 2rem; }
 
-.portfolio h2 {
-  padding: 2rem;
-  width: 100%;
-  margin: 15px 0; }
-
-.card {
-  text-align: center;
-  float: left;
-  display: block; }
-
-.card p {
-  font-weight: 300;
-  padding: 0 1rem 45px;
-  font-size: .95em; }
-
-.card img {
-  padding: 1px; }
-
 .contact {
   background-color: #FAFAFA;
   margin-top: 30px; }
-
-.contact h2 {
-  margin: 10px 0 30px; }
 
 .message,
 .phone,
@@ -478,6 +432,23 @@ a:hover,
 
   .message {
     margin: 1.5rem 10rem 0; } }
+.card {
+  text-align: center;
+  float: left;
+  display: block; }
+  .card p {
+    font-weight: 300;
+    padding: 0 1rem 45px;
+    font-size: .95em; }
+  .card img {
+    padding: 1px; }
+
+.portfolio {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
 .main_header {
   padding: .5em 0 45px;
   margin: 0 auto;
@@ -488,20 +459,16 @@ a:hover,
   background-color: #FAFAFA;
   margin: 0;
   padding-top: 2rem; }
-
-.main_footer a,
-.main_footer p {
-  padding: 1rem 2rem 1rem;
-  font-size: .75em;
-  font-weight: 800;
-  color: #515151;
-  display: block; }
-
-.main_footer a:hover {
-  color: #51BAB5; }
-
-.main_footer p {
-  float: left; }
+  .main_footer a, .main_footer p {
+    padding: 1rem 2rem 1rem;
+    font-size: .75em;
+    font-weight: 800;
+    color: #515151;
+    display: block; }
+  .main_footer a:hover {
+    color: #51BAB5; }
+  .main_footer p {
+    float: left; }
 
 .footer_nav {
   float: right; }
@@ -509,5 +476,34 @@ a:hover,
 .footer_links,
 #mobile_footer {
   text-transform: uppercase; }
+
+.name {
+  font-size: 1.5em;
+  color: #515151;
+  margin: 6px 0;
+  padding: 10px; }
+
+.portfolio h2 {
+  padding: 2rem;
+  width: 100%;
+  margin: 15px 0; }
+
+.contact h2 {
+  margin: 10px 0 30px; }
+
+.main_nav {
+  margin-top: 5px; }
+  .main_nav li {
+    color: #515151;
+    margin: 6px 0; }
+  .main_nav a {
+    padding: 10px;
+    display: block;
+    font-size: .95em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #515151; }
+    .main_nav a:hover {
+      color: #51BAB5; }
 
 /*# sourceMappingURL=application.css.map */

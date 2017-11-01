@@ -53,36 +53,36 @@
 // Base Layout Styles
 // ___________________________________________________________________
 
-// ----- Navigation -----
+// // ----- Navigation -----
 
-.name {
-  font-size: 1.5em;
-}
+// .name {
+//   font-size: 1.5em;
+// }
 
-.main_nav {
-  margin-top: 5px;
-}
+// .main_nav {
+//   margin-top: 5px;
+// }
 
-.name,
-.main_nav li {
-  text-align: center;
-  color: $dark-gray;
-  margin: 6px 0;
-}
+// .name,
+// .main_nav li {
+//   text-align: center;
+//   color: $dark-gray;
+//   margin: 6px 0;
+// }
 
-.name,
-.main_nav a {
-  padding: 10px;
-  text-align: center;
-  display: block;
-}
+// .name,
+// .main_nav a {
+//   padding: 10px;
+//   text-align: center;
+//   display: block;
+// }
 
-.main_nav a {
-  font-size: .95em;
-  font-weight: $font-weight--bold;
-  text-transform: uppercase;
-  color: $dark-gray;
-}
+// .main_nav a {
+//   font-size: .95em;
+//   font-weight: $font-weight--bold;
+//   text-transform: uppercase;
+//   color: $dark-gray;
+// }
 
 a:hover,
 .phone a:hover,
@@ -104,12 +104,12 @@ a:hover,
   background-color: $extra-light-gray;
 }
 
-.portfolio {
-  background-color: $white;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+// .portfolio {
+//   background-color: $white;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
 
 .contact {
   text-align: center;
@@ -157,27 +157,27 @@ a:hover,
 
 // ----- Portfolio Section -----
 
-.portfolio h2 {
-  padding: 2rem;
-  width: 100%;
-  margin: 15px 0;
-}
+// .portfolio h2 {
+//   padding: 2rem;
+//   width: 100%;
+//   margin: 15px 0;
+// }
 
-.card {
-  text-align: center;
-  float: left;
-  display: block;
-}
+// .card {
+//   text-align: center;
+//   float: left;
+//   display: block;
+// }
 
-.card p {
-  font-weight: $font-weight--light;
-  padding: 0 1rem 45px;
-  font-size: .95em;
-}
+// .card p {
+//   font-weight: $font-weight--light;
+//   padding: 0 1rem 45px;
+//   font-size: .95em;
+// }
 
-.card img {
-  padding: 1px;
-}
+// .card img {
+//   padding: 1px;
+// }
 
 
 // ----- Contact Section -----
@@ -187,9 +187,9 @@ a:hover,
   margin-top: 30px;
 }
 
-.contact h2 {
-  margin: 10px 0 30px;
-}
+// .contact h2 {
+//   margin: 10px 0 30px;
+// }
 
 .message,
 .phone,

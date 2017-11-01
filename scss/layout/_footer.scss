@@ -7,23 +7,22 @@
   background-color: $extra-light-gray;
   margin: 0;
   padding-top: 2rem;
-}
 
-.main_footer a,
-.main_footer p {
-  padding: 1rem 2rem 1rem;
-  font-size: .75em;
-  font-weight: 800;
-  color: $dark-gray;
-  display: block;
-}
+  a, p {
+    padding: 1rem 2rem 1rem;
+    font-size: .75em;
+    font-weight: $font-weight--extra-bold;
+    color: $dark-gray;
+    display: block;
+  }
 
-.main_footer a:hover {
-  color: $fountain-blue;
-}
+  a:hover {
+    color: $fountain-blue;
+  }
 
-.main_footer p {
-  float: left;
+  p {
+    float: left;
+  }
 }
 
 .footer_nav {
