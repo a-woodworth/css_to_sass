@@ -7,6 +7,9 @@
 h1, h2, .main_nav li {
   text-align: center; }
 
+#bio_photo {
+  border-radius: 50%; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -248,20 +251,6 @@ a:hover,
   text-align: center;
   padding: 2rem; }
 
-#bio_photo {
-  display: block;
-  border-radius: 100%;
-  max-width: 150px;
-  position: relative;
-  top: 17.5px;
-  left: 75px; }
-
-.bio_photo {
-  max-width: 300px;
-  height: 185px;
-  background-color: #EDEDED;
-  margin: 0 auto; }
-
 .intro {
   font-size: .95em;
   color: #7e7e7e;
@@ -490,6 +479,18 @@ a:hover,
 
 .contact h2 {
   margin: 10px 0 30px; }
+
+#bio_photo {
+  max-width: 150px;
+  position: relative;
+  top: 17.5px;
+  left: 75px; }
+
+.bio_photo {
+  max-width: 300px;
+  height: 185px;
+  background-color: #EDEDED;
+  margin: 0 auto; }
 
 .main_nav {
   margin-top: 5px; }

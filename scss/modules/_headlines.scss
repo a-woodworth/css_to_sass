@@ -3,8 +3,7 @@
 // ___________________________________________________________________
 
 .name {               // h1
-  font-size: 1.5em;
-  color: $dark-gray;
+  @include text(1.5em, $color:$dark-gray);
   margin: 6px 0;
   padding: 10px;
 }
