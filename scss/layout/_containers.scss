@@ -2,30 +2,151 @@
 // Containers
 // ___________________________________________________________________
 
-// Card Layout
+// Bio Div
+.bio {
+  @extend %clearfix;
+  padding: 0 1em;
+  background-color: $extra-light-gray;
 
+  p {
+    @extend %bio-content;
+
+    @media #{$brkpoint-lg} {
+      margin: 0;
+      padding: 0 0 0 10px;
+    }
+
+    @media #{$brkpoint-md} {
+    font-size: 1.125em;
+    float: left;
+    width: 55%;
+    text-align: left;
+    padding-top: 0;
+    }
+  }
+
+  @media #{$brkpoint-md} {
+    padding: 0 5% 45px;
+  }
+
+  @media #{$brkpoint-lg} {
+    margin: 0 5%;
+    padding: 0 2.5% 5%;
+  }
+}
+
+// Card Layout
 .card {
-  text-align: center;
+  @extend %centered;
+  background-color: $white;
   float: left;
   display: block;
 
   p {
-    font-weight: $font-weight--light;
+    @include text(.95em, $weight: $font-weight--light);
     padding: 0 1rem 45px;
-    font-size: .95em;
+
+    @media #{$brkpoint-md} {
+      padding: 0 1.35rem 45px;
+      font-size: 1em;
+    }
+
+    @media #{$brkpoint-lg} {
+      font-size: .95em;
+      padding: 0 0 45px;
+    }
   }
 
   img {
     padding: 1px;
   }
+
+  @media #{$brkpoint-sm} {
+    padding: 0 .5rem;
+  }
+
+  @media #{$brkpoint-md} {
+    width: 50%;
+    padding: .175rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    width: 32%;
+    padding: .25rem;
+  }
 }
 
+// Contact Section
+.contact {
+  @extend %contact-content;
 
-// Portfolio Layout
+  @media #{$brkpoint-sm} {
+    .message {
+      margin-top: 1rem;
+    }
+  }
+
+  @media #{$brkpoint-md} {
+    p, a {
+      font-size: 1.125em;
+    }
+
+    .message {
+      padding: 0 3rem 2rem;
+      margin: 1.5rem 3rem 0;
+    }
+
+    .phone {
+      padding: 0 0 15px;
+    }
+  }
+
+  @media #{$brkpoint-lg} {
+    margin-top: 0;
+
+    p {
+      font-size: 1.175em;
+    }
+
+    .message {
+      margin: 1.5rem 10rem 0;
+    }
+  }
+}
+
+// Portfolio Section
 
 .portfolio {
+  @extend %clearfix;
   background-color: $white;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media #{$brkpoint-md} {
+    margin: 0 3rem;
+  }
+
+  @media #{$brkpoint-lg} {
+    margin: 0 5%;
+    padding: 0 2.5% 5%;
+  }
+}
+
+// Wrapper
+.container {
+  @media #{$brkpoint-sm} {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media #{$brkpoint-md} {
+    width: 100%;
+  }
+
+  @media #{$brkpoint-lg} {
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }

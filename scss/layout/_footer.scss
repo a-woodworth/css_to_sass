@@ -9,11 +9,13 @@
   padding-top: 2rem;
 
   a, p {
+    @include text(.75em, $font-weight--extra-bold, $dark-gray);
     padding: 1rem 2rem 1rem;
-    font-size: .75em;
-    font-weight: $font-weight--extra-bold;
-    color: $dark-gray;
     display: block;
+
+    @media #{$brkpoint-md} {
+      padding: 1rem 2rem 2rem;
+    }
   }
 
   a:hover {
@@ -27,9 +29,27 @@
 
 .footer_nav {
   float: right;
+
+  li {
+    @media #{$brkpoint-md} {
+      display: inline-block;
+      margin-left: -40px;
+    }
+  }
 }
 
-.footer_links,
+.footer_links {
+  @extend %allcaps;
+
+  @media #{$brkpoint-sm} {
+    display: none;
+  }
+}
+
 #mobile_footer {
-  text-transform: uppercase;
+  @extend %allcaps;
+
+  @media #{$brkpoint-md} {
+    display: none;
+  }
 }

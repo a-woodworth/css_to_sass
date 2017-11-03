@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800");
-.main_header:after {
+.bio:after, .portfolio:after, .main_header:after {
   content: "";
   display: table;
   clear: both; }
 
-h1, h2, .main_nav li {
+h1, h2, .bio p, .contact, .card, .main_nav li {
   text-align: center; }
 
 #bio_photo {
   border-radius: 50%; }
+
+h2, .footer_links, #mobile_footer, .main_nav a {
+  text-transform: uppercase; }
 
 html {
   font-family: sans-serif;
@@ -202,6 +205,9 @@ ul {
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6; }
+  @media (min-width: 1024px) {
+    body {
+      background-color: #FAFAFA; } }
 
 h1 {
   font-size: 1em;
@@ -212,11 +218,9 @@ h2 {
   font-size: 1em;
   font-weight: 700;
   color: #515151;
-  text-transform: uppercase;
   margin: 0; }
 
 h3 {
-  font-size: 1em;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.75);
   margin: 0;
@@ -238,210 +242,137 @@ hr {
   margin: 0 2rem;
   background-color: #FAFAFA; }
 
-a:hover,
-.phone a:hover,
-.email a:hover {
-  color: #51BAB5; }
-
-.bio {
-  padding: 0 1em;
-  background-color: #FAFAFA; }
-
-.contact {
-  text-align: center;
-  padding: 2rem; }
-
-.intro {
-  font-size: .95em;
+.bio p {
+  font-size: 0.95em;
   color: #7e7e7e;
-  text-align: center;
   margin: 0 0 3rem;
   padding-top: 2rem; }
 
 .contact {
+  padding: 2rem;
   background-color: #FAFAFA;
   margin-top: 30px; }
-
-.message,
-.phone,
-.email,
-.contact a {
-  color: #939393;
-  font-size: .85em; }
-
-.phone {
-  padding: 30px 0 15px; }
-
-.contact a {
-  font-weight: bold;
-  margin-left: 10px; }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-@media screen and (min-width: 320px) {
-  .container {
-    width: 90%;
-    margin: 0 auto; }
-
-  .main_nav a {
-    background-color: #fff; }
-
-  .card {
-    padding: 0 .5rem; }
-
-  .message {
-    margin-top: 1rem; }
-
-  .footer_links {
-    display: none; } }
-@media screen and (min-width: 768px) {
-  .container {
-    width: 100%; }
-
-  .main_header {
-    text-align: center;
-    padding-top: 45px; }
-
-  .main_nav a {
-    background-color: #FAFAFA; }
-
-  .main_nav li {
-    display: inline-block;
-    margin-left: 15px; }
-
-  .bio {
-    padding: 0 5% 45px; }
-
-  .intro {
-    font-size: 1.125em;
-    float: left;
-    width: 55%;
-    text-align: left;
-    padding-top: 0; }
-
-  .bio_photo {
-    float: right;
-    width: 45%; }
-
-  .portfolio {
-    margin: 0 3rem; }
-
-  .card {
-    width: 50%;
-    padding: .175rem; }
-
-  .card p {
-    padding: 0 1.35rem 45px;
-    font-size: 1em; }
-
-  .message {
-    padding: 0 3rem 2rem;
-    margin: 1.5rem 3rem 0; }
-
-  .message,
-  .phone,
-  .email,
+  .contact p, .contact a {
+    font-size: 0.85em;
+    color: #939393; }
   .contact a {
-    font-size: 1.125em; }
+    font-weight: 700;
+    margin-left: 10px; }
+    .contact a:hover {
+      color: #51BAB5; }
+  .contact .phone {
+    padding: 30px 0 15px; }
 
-  .phone {
-    padding: 0 0 15px; }
+.bio {
+  padding: 0 1em;
+  background-color: #FAFAFA; }
+  @media (min-width: 1024px) {
+    .bio p {
+      margin: 0;
+      padding: 0 0 0 10px; } }
+  @media (min-width: 768px) {
+    .bio p {
+      font-size: 1.125em;
+      float: left;
+      width: 55%;
+      text-align: left;
+      padding-top: 0; } }
+  @media (min-width: 768px) {
+    .bio {
+      padding: 0 5% 45px; } }
+  @media (min-width: 1024px) {
+    .bio {
+      margin: 0 5%;
+      padding: 0 2.5% 5%; } }
 
-  .main_footer a,
-  .main_footer p {
-    padding: 1rem 2rem 2rem; }
-
-  .footer_nav li {
-    display: inline-block;
-    margin-left: -40px; }
-
-  #mobile_footer {
-    display: none; } }
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: #FAFAFA; }
-
-  .container {
-    width: 85%;
-    max-width: 1024px;
-    margin: 0 auto; }
-
-  .main_header {
-    text-align: left;
-    margin: 35px 0;
-    padding: 0; }
-
-  .name {
-    float: left; }
-
-  .main_nav {
-    float: right; }
-
-  .name,
-  .main_nav li {
-    display: inline-block; }
-
-  .main_nav a {
-    padding: 10px 0 10px 10px; }
-
-  .bio,
-  .portfolio {
-    margin: 0 5%;
-    padding: 0 2.5% 5%; }
-
-  .intro {
-    margin: 0;
-    padding: 0 0 0 10px; }
-
-  #bio_photo {
-    max-width: 200px; }
-
-  .bio_photo {
-    max-width: 350px;
-    height: 235px; }
-
-  .card {
-    width: 32%;
-    padding: .25rem; }
-
-  .card p {
-    font-size: .95em;
-    padding: 0 0 45px; }
-
-  .contact {
-    margin-top: 0; }
-
-  .message,
-  .phone,
-  .email {
-    font-size: 1.175em; }
-
-  .message {
-    margin: 1.5rem 10rem 0; } }
 .card {
-  text-align: center;
+  background-color: #fff;
   float: left;
   display: block; }
   .card p {
+    font-size: 0.95em;
     font-weight: 300;
-    padding: 0 1rem 45px;
-    font-size: .95em; }
+    padding: 0 1rem 45px; }
+    @media (min-width: 768px) {
+      .card p {
+        padding: 0 1.35rem 45px;
+        font-size: 1em; } }
+    @media (min-width: 1024px) {
+      .card p {
+        font-size: .95em;
+        padding: 0 0 45px; } }
   .card img {
     padding: 1px; }
+  @media (min-width: 320px) {
+    .card {
+      padding: 0 .5rem; } }
+  @media (min-width: 768px) {
+    .card {
+      width: 50%;
+      padding: .175rem; } }
+  @media (min-width: 1024px) {
+    .card {
+      width: 32%;
+      padding: .25rem; } }
+
+@media (min-width: 320px) {
+  .contact .message {
+    margin-top: 1rem; } }
+@media (min-width: 768px) {
+  .contact p, .contact a {
+    font-size: 1.125em; }
+  .contact .message {
+    padding: 0 3rem 2rem;
+    margin: 1.5rem 3rem 0; }
+  .contact .phone {
+    padding: 0 0 15px; } }
+@media (min-width: 1024px) {
+  .contact {
+    margin-top: 0; }
+    .contact p {
+      font-size: 1.175em; }
+    .contact .message {
+      margin: 1.5rem 10rem 0; } }
 
 .portfolio {
   background-color: #fff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .portfolio {
+      margin: 0 3rem; } }
+  @media (min-width: 1024px) {
+    .portfolio {
+      margin: 0 5%;
+      padding: 0 2.5% 5%; } }
+
+@media (min-width: 320px) {
+  .container {
+    width: 90%;
+    margin: 0 auto; } }
+@media (min-width: 768px) {
+  .container {
+    width: 100%; } }
+@media (min-width: 1024px) {
+  .container {
+    width: 85%;
+    max-width: 1024px;
+    margin: 0 auto; } }
 
 .main_header {
   padding: .5em 0 45px;
   margin: 0 auto;
   background-color: #FAFAFA; }
+  @media (min-width: 768px) {
+    .main_header {
+      text-align: center;
+      padding-top: 45px; } }
+  @media (min-width: 1024px) {
+    .main_header {
+      text-align: left;
+      margin: 35px 0;
+      padding: 0; } }
 
 .main_footer {
   min-height: 125px;
@@ -449,11 +380,14 @@ a:hover,
   margin: 0;
   padding-top: 2rem; }
   .main_footer a, .main_footer p {
-    padding: 1rem 2rem 1rem;
-    font-size: .75em;
+    font-size: 0.75em;
     font-weight: 800;
     color: #515151;
+    padding: 1rem 2rem 1rem;
     display: block; }
+    @media (min-width: 768px) {
+      .main_footer a, .main_footer p {
+        padding: 1rem 2rem 2rem; } }
   .main_footer a:hover {
     color: #51BAB5; }
   .main_footer p {
@@ -461,16 +395,28 @@ a:hover,
 
 .footer_nav {
   float: right; }
+  @media (min-width: 768px) {
+    .footer_nav li {
+      display: inline-block;
+      margin-left: -40px; } }
 
-.footer_links,
-#mobile_footer {
-  text-transform: uppercase; }
+@media (min-width: 320px) {
+  .footer_links {
+    display: none; } }
+
+@media (min-width: 768px) {
+  #mobile_footer {
+    display: none; } }
 
 .name {
   font-size: 1.5em;
   color: #515151;
   margin: 6px 0;
   padding: 10px; }
+  @media (min-width: 1024px) {
+    .name {
+      float: left;
+      display: inline-block; } }
 
 .portfolio h2 {
   padding: 2rem;
@@ -485,26 +431,55 @@ a:hover,
   position: relative;
   top: 17.5px;
   left: 75px; }
+  @media (min-width: 1024px) {
+    #bio_photo {
+      max-width: 200px; } }
 
 .bio_photo {
   max-width: 300px;
   height: 185px;
   background-color: #EDEDED;
   margin: 0 auto; }
+  @media (min-width: 768px) {
+    .bio_photo {
+      float: right;
+      width: 45%; } }
+  @media (min-width: 1024px) {
+    .bio_photo {
+      max-width: 350px;
+      height: 235px; } }
 
 .main_nav {
   margin-top: 5px; }
   .main_nav li {
     color: #515151;
     margin: 6px 0; }
+    @media (min-width: 768px) {
+      .main_nav li {
+        display: inline-block;
+        margin-left: 15px; } }
+    @media (min-width: 1024px) {
+      .main_nav li {
+        display: inline-block; } }
   .main_nav a {
-    padding: 10px;
-    display: block;
-    font-size: .95em;
+    font-size: 0.95em;
     font-weight: 700;
-    text-transform: uppercase;
-    color: #515151; }
+    color: #515151;
+    padding: 10px;
+    display: block; }
     .main_nav a:hover {
       color: #51BAB5; }
+    @media (min-width: 320px) {
+      .main_nav a {
+        background-color: #fff; } }
+    @media (min-width: 768px) {
+      .main_nav a {
+        background-color: #FAFAFA; } }
+    @media (min-width: 1024px) {
+      .main_nav a {
+        padding: 10px 0 10px 10px; } }
+  @media (min-width: 1024px) {
+    .main_nav {
+      float: right; } }
 
 /*# sourceMappingURL=application.css.map */

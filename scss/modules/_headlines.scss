@@ -2,10 +2,16 @@
 // Headlines
 // ___________________________________________________________________
 
-.name {               // h1
+// h1
+.name {
   @include text(1.5em, $color:$dark-gray);
   margin: 6px 0;
   padding: 10px;
+
+  @media #{$brkpoint-lg} {
+    float: left;
+    display: inline-block;
+  }
 }
 
 .portfolio h2 {

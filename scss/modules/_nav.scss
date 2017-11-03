@@ -9,18 +9,41 @@
     @extend %centered;
     color: $dark-gray;
     margin: 6px 0;
+
+    @media #{$brkpoint-md} {
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    @media #{$brkpoint-lg} {
+      display: inline-block;
+    }
   }
 
   a {
+    @extend %allcaps;
+    @include text(.95em, $font-weight--bold, $dark-gray);
     padding: 10px;
     display: block;
-    font-size: .95em;
-    font-weight: $font-weight--bold;
-    text-transform: uppercase;
-    color: $dark-gray;
 
     &:hover {
       color: $fountain-blue;
     }
+
+    @media #{$brkpoint-sm} {
+      background-color: $white;
+    }
+
+    @media #{$brkpoint-md} {
+      background-color: $extra-light-gray;
+    }
+
+    @media #{$brkpoint-lg} {
+      padding: 10px 0 10px 10px;
+    }
+  }
+
+  @media #{$brkpoint-lg} {
+    float: right;
   }
 }
